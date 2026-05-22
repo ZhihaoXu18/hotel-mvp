@@ -1,0 +1,590 @@
+{
+    "business_summary": {
+        "scale": {
+            "total_revenue": 164497573.57,
+            "total_quantity": "63391",
+            "number_of_transactions": 21145,
+            "average_booking_value": 7779.5,
+            "average_unit_price": 2597.72,
+            "number_of_categories": 7
+        },
+        "revenue_quality": {
+            "mean_revenue": 7779.5,
+            "median_revenue": 6206.31,
+            "mean_unit_price": 2597.72,
+            "median_unit_price": 2586.61,
+            "revenue_cv": 0.7544,
+            "unit_price_cv": 0.5335
+        },
+        "volume_price_structure": [
+            {
+                "month": "2023-01",
+                "total_revenue": 14052961.49,
+                "total_quantity": 5336,
+                "avg_unit_price": 2633.6135,
+                "revenue_mom_growth": null,
+                "quantity_mom_growth": null,
+                "unit_price_mom_growth": null
+            },
+            {
+                "month": "2023-02",
+                "total_revenue": 12556570.51,
+                "total_quantity": 4803,
+                "avg_unit_price": 2614.3182,
+                "revenue_mom_growth": -0.1065,
+                "quantity_mom_growth": -0.0999,
+                "unit_price_mom_growth": -0.0073
+            },
+            {
+                "month": "2023-03",
+                "total_revenue": 13684628.45,
+                "total_quantity": 5343,
+                "avg_unit_price": 2561.2256,
+                "revenue_mom_growth": 0.0898,
+                "quantity_mom_growth": 0.1124,
+                "unit_price_mom_growth": -0.0203
+            },
+            {
+                "month": "2023-04",
+                "total_revenue": 13126992.07,
+                "total_quantity": 5117,
+                "avg_unit_price": 2565.3688,
+                "revenue_mom_growth": -0.0407,
+                "quantity_mom_growth": -0.0423,
+                "unit_price_mom_growth": 0.0016
+            },
+            {
+                "month": "2023-05",
+                "total_revenue": 14251098.24,
+                "total_quantity": 5406,
+                "avg_unit_price": 2636.1632,
+                "revenue_mom_growth": 0.0856,
+                "quantity_mom_growth": 0.0565,
+                "unit_price_mom_growth": 0.0276
+            },
+            {
+                "month": "2023-06",
+                "total_revenue": 13804335.12,
+                "total_quantity": 5382,
+                "avg_unit_price": 2564.908,
+                "revenue_mom_growth": -0.0313,
+                "quantity_mom_growth": -0.0044,
+                "unit_price_mom_growth": -0.027
+            },
+            {
+                "month": "2023-07",
+                "total_revenue": 14203105.29,
+                "total_quantity": 5457,
+                "avg_unit_price": 2602.7314,
+                "revenue_mom_growth": 0.0289,
+                "quantity_mom_growth": 0.0139,
+                "unit_price_mom_growth": 0.0147
+            },
+            {
+                "month": "2023-08",
+                "total_revenue": 14315232.82,
+                "total_quantity": 5466,
+                "avg_unit_price": 2618.9595,
+                "revenue_mom_growth": 0.0079,
+                "quantity_mom_growth": 0.0016,
+                "unit_price_mom_growth": 0.0062
+            },
+            {
+                "month": "2023-09",
+                "total_revenue": 13958532.23,
+                "total_quantity": 5304,
+                "avg_unit_price": 2631.6991,
+                "revenue_mom_growth": -0.0249,
+                "quantity_mom_growth": -0.0296,
+                "unit_price_mom_growth": 0.0049
+            },
+            {
+                "month": "2023-10",
+                "total_revenue": 13015407.23,
+                "total_quantity": 5119,
+                "avg_unit_price": 2542.5683,
+                "revenue_mom_growth": -0.0676,
+                "quantity_mom_growth": -0.0349,
+                "unit_price_mom_growth": -0.0339
+            },
+            {
+                "month": "2023-11",
+                "total_revenue": 13670752.88,
+                "total_quantity": 5210,
+                "avg_unit_price": 2623.9449,
+                "revenue_mom_growth": 0.0504,
+                "quantity_mom_growth": 0.0178,
+                "unit_price_mom_growth": 0.032
+            },
+            {
+                "month": "2023-12",
+                "total_revenue": 13857957.24,
+                "total_quantity": 5448,
+                "avg_unit_price": 2543.6779,
+                "revenue_mom_growth": 0.0137,
+                "quantity_mom_growth": 0.0457,
+                "unit_price_mom_growth": -0.0306
+            }
+        ],
+        "momentum_and_seasonality": {
+            "strongest_month_by_revenue": "2023-08",
+            "weakest_month_by_revenue": "2023-02",
+            "highest_volume_month": "2023-08",
+            "highest_price_month": "2023-05"
+        },
+        "price_tier_comparison": {
+            "low_price_transactions": {
+                "avg_unit_price": 679.46,
+                "avg_quantity": 3.0,
+                "avg_revenue": 2038.17,
+                "count": 4229
+            },
+            "high_price_transactions": {
+                "avg_unit_price": 4522.17,
+                "avg_quantity": 2.98,
+                "avg_revenue": 13466.83,
+                "count": 4229
+            }
+        },
+        "category_dependence": {
+            "top_3_categories_revenue_share": 0.4354,
+            "top_category_by_revenue": "Hybrid Bike",
+            "top_category_revenue_share": 0.1457,
+            "top_category_quantity_share": 0.1461
+        }
+    },
+    "optimization_results": [
+        {
+            "category": "BMX",
+            "baseline_revenue": 227090.2,
+            "optimal_price": 4036.16,
+            "optimal_revenue": 236301.14,
+            "uplift_pct": 4.06
+        },
+        {
+            "category": "Folding Bike",
+            "baseline_revenue": 240584.31,
+            "optimal_price": 4118.31,
+            "optimal_revenue": 274842.1,
+            "uplift_pct": 14.24
+        },
+        {
+            "category": "Mountain Bike",
+            "baseline_revenue": 55470.12,
+            "optimal_price": 1129.37,
+            "optimal_revenue": 55020.53,
+            "uplift_pct": -0.81
+        }
+    ],
+    "scenario_results": [
+        {
+            "category": "BMX",
+            "price_tier": "Mid",
+            "low_price": 2575.44,
+            "low_revenue": 107679.53,
+            "mid_price": 2662.25,
+            "mid_revenue": 109951.48,
+            "high_price": 2704.52,
+            "high_revenue": 111047.75,
+            "revenue_range_pct": 3.07,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "Mid",
+            "low_price": 2464.07,
+            "low_revenue": 138242.87,
+            "mid_price": 2544.18,
+            "mid_revenue": 141816.55,
+            "high_price": 2652.29,
+            "high_revenue": 146603.16,
+            "revenue_range_pct": 5.88,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "Low",
+            "low_price": 923.74,
+            "low_revenue": 61713.24,
+            "mid_price": 973.04,
+            "mid_revenue": 66403.05,
+            "high_price": 1081.65,
+            "high_revenue": 77079.09,
+            "revenue_range_pct": 22.47,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "Mid",
+            "low_price": 2554.01,
+            "low_revenue": 162094.06,
+            "mid_price": 2614.68,
+            "mid_revenue": 166560.97,
+            "high_price": 2691.92,
+            "high_revenue": 172271.38,
+            "revenue_range_pct": 6.1,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "High",
+            "low_price": 4101.81,
+            "low_revenue": 274475.76,
+            "mid_price": 4191.44,
+            "mid_revenue": 270355.64,
+            "high_price": 4259.03,
+            "high_revenue": 267347.04,
+            "revenue_range_pct": 2.63,
+            "decision": "Keep current pricing"
+        },
+        {
+            "category": "Folding Bike",
+            "price_tier": "Low",
+            "low_price": 900.55,
+            "low_revenue": 54592.62,
+            "mid_price": 989.65,
+            "mid_revenue": 58810.82,
+            "high_price": 1077.95,
+            "high_revenue": 62912.78,
+            "revenue_range_pct": 14.16,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Folding Bike",
+            "price_tier": "Mid",
+            "low_price": 2540.33,
+            "low_revenue": 135773.34,
+            "mid_price": 2669.27,
+            "mid_revenue": 153959.8,
+            "high_price": 2725.6,
+            "high_revenue": 162343.77,
+            "revenue_range_pct": 17.63,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "Low",
+            "low_price": 921.55,
+            "low_revenue": 52719.18,
+            "mid_price": 993.52,
+            "mid_revenue": 58572.78,
+            "high_price": 1087.02,
+            "high_revenue": 66433.59,
+            "revenue_range_pct": 23.15,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "Mid",
+            "low_price": 2497.48,
+            "low_revenue": 134932.25,
+            "mid_price": 2572.77,
+            "mid_revenue": 141620.09,
+            "high_price": 2647.4,
+            "high_revenue": 148371.2,
+            "revenue_range_pct": 9.49,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "High",
+            "low_price": 4113.44,
+            "low_revenue": 214071.21,
+            "mid_price": 4189.55,
+            "mid_revenue": 222361.78,
+            "high_price": 4260.14,
+            "high_revenue": 230196.35,
+            "revenue_range_pct": 7.26,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Mountain Bike",
+            "price_tier": "Mid",
+            "low_price": 2480.31,
+            "low_revenue": 146595.91,
+            "mid_price": 2536.6,
+            "mid_revenue": 151133.0,
+            "high_price": 2621.19,
+            "high_revenue": 158018.55,
+            "revenue_range_pct": 7.52,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Mountain Bike",
+            "price_tier": "High",
+            "low_price": 4087.3,
+            "low_revenue": 261352.83,
+            "mid_price": 4153.22,
+            "mid_revenue": 264296.78,
+            "high_price": 4251.01,
+            "high_revenue": 268637.71,
+            "revenue_range_pct": 2.75,
+            "decision": "Keep current pricing"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "Low",
+            "low_price": 915.28,
+            "low_revenue": 42024.51,
+            "mid_price": 979.76,
+            "mid_revenue": 47322.44,
+            "high_price": 1057.96,
+            "high_revenue": 54103.52,
+            "revenue_range_pct": 25.26,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "Mid",
+            "low_price": 2467.38,
+            "low_revenue": 125055.95,
+            "mid_price": 2577.57,
+            "mid_revenue": 136619.56,
+            "high_price": 2686.27,
+            "high_revenue": 148533.79,
+            "revenue_range_pct": 17.17,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "High",
+            "low_price": 4156.35,
+            "low_revenue": 213878.15,
+            "mid_price": 4234.53,
+            "mid_revenue": 220677.95,
+            "high_price": 4291.54,
+            "high_revenue": 225689.78,
+            "revenue_range_pct": 5.37,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "BMX",
+            "price_tier": "Low",
+            "low_price": 953.82,
+            "low_revenue": 44084.83,
+            "mid_price": 1025.2,
+            "mid_revenue": 50794.48,
+            "high_price": 1108.55,
+            "high_revenue": 59218.04,
+            "revenue_range_pct": 29.46,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "Low",
+            "low_price": 954.59,
+            "low_revenue": 56304.89,
+            "mid_price": 1046.55,
+            "mid_revenue": 65347.87,
+            "high_price": 1074.3,
+            "high_revenue": 68177.35,
+            "revenue_range_pct": 18.76,
+            "decision": "Test slightly higher price"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "High",
+            "low_price": 4116.84,
+            "low_revenue": 229807.37,
+            "mid_price": 4185.45,
+            "mid_revenue": 240281.49,
+            "high_price": 4241.17,
+            "high_revenue": 249004.9,
+            "revenue_range_pct": 8.01,
+            "decision": "Test slightly higher price"
+        }
+    ],
+    "optimization_ab_results": [
+        {
+            "category": "BMX",
+            "baseline_revenue": 226149.47,
+            "optimal_price": 4036.16,
+            "treatment_revenue": 235695.33,
+            "uplift_pct": 4.22,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Folding Bike",
+            "baseline_revenue": 241224.7,
+            "optimal_price": 4118.31,
+            "treatment_revenue": 275233.53,
+            "uplift_pct": 14.1,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Mountain Bike",
+            "baseline_revenue": 54630.99,
+            "optimal_price": 1129.37,
+            "treatment_revenue": 55413.81,
+            "uplift_pct": 1.43,
+            "p_value": 0.55,
+            "decision": "Inconclusive - need more data"
+        }
+    ],
+    "scenario_ab_results": [
+        {
+            "category": "BMX",
+            "price_tier": "Mid",
+            "control_revenue": 110774.19,
+            "treatment_revenue": 109306.5,
+            "uplift_pct": -1.32,
+            "p_value": 0.21,
+            "decision": "Inconclusive - need more data"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "Mid",
+            "control_revenue": 143321.19,
+            "treatment_revenue": 147426.64,
+            "uplift_pct": 2.86,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "Low",
+            "control_revenue": 66203.19,
+            "treatment_revenue": 78146.83,
+            "uplift_pct": 18.04,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "Mid",
+            "control_revenue": 166830.8,
+            "treatment_revenue": 171232.03,
+            "uplift_pct": 2.64,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Electric Bike",
+            "price_tier": "High",
+            "control_revenue": 270424.8,
+            "treatment_revenue": 266803.61,
+            "uplift_pct": -1.34,
+            "p_value": 0.0,
+            "decision": "Do NOT deploy"
+        },
+        {
+            "category": "Folding Bike",
+            "price_tier": "Low",
+            "control_revenue": 59889.76,
+            "treatment_revenue": 62553.8,
+            "uplift_pct": 4.45,
+            "p_value": 0.06,
+            "decision": "Inconclusive - need more data"
+        },
+        {
+            "category": "Folding Bike",
+            "price_tier": "Mid",
+            "control_revenue": 153177.51,
+            "treatment_revenue": 160816.21,
+            "uplift_pct": 4.99,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "Low",
+            "control_revenue": 57563.23,
+            "treatment_revenue": 66236.99,
+            "uplift_pct": 15.07,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "Mid",
+            "control_revenue": 142681.42,
+            "treatment_revenue": 149525.22,
+            "uplift_pct": 4.8,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Hybrid Bike",
+            "price_tier": "High",
+            "control_revenue": 223637.05,
+            "treatment_revenue": 230452.4,
+            "uplift_pct": 3.05,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Mountain Bike",
+            "price_tier": "Mid",
+            "control_revenue": 150428.65,
+            "treatment_revenue": 158698.63,
+            "uplift_pct": 5.5,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Mountain Bike",
+            "price_tier": "High",
+            "control_revenue": 263969.31,
+            "treatment_revenue": 268954.84,
+            "uplift_pct": 1.89,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "Low",
+            "control_revenue": 48089.38,
+            "treatment_revenue": 53053.25,
+            "uplift_pct": 10.32,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "Mid",
+            "control_revenue": 136805.13,
+            "treatment_revenue": 147717.67,
+            "uplift_pct": 7.98,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Road Bike",
+            "price_tier": "High",
+            "control_revenue": 219896.54,
+            "treatment_revenue": 225847.35,
+            "uplift_pct": 2.71,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "BMX",
+            "price_tier": "Low",
+            "control_revenue": 50457.69,
+            "treatment_revenue": 59027.74,
+            "uplift_pct": 16.98,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "Low",
+            "control_revenue": 64032.47,
+            "treatment_revenue": 69635.53,
+            "uplift_pct": 8.75,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        },
+        {
+            "category": "Cruiser",
+            "price_tier": "High",
+            "control_revenue": 240851.74,
+            "treatment_revenue": 250975.76,
+            "uplift_pct": 4.2,
+            "p_value": 0.0,
+            "decision": "Deploy new pricing"
+        }
+    ]
+}

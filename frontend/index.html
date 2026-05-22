@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Optimization Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Pricing Optimization Dashboard</h1>
+
+    <section>
+        <h2>Business Summary</h2>
+        <div id="summaryCards"></div>
+    </section>
+
+    <section>
+        <h2>Monthly Revenue Trend</h2>
+        <canvas id="revenueChart"></canvas>
+    </section>
+
+    <section>
+        <h2>Baseline vs Optimal Revenue</h2>
+        <canvas id="optimizationChart"></canvas>
+    </section>
+
+    <section>
+        <h2>Optimization A/B Test Results</h2>
+        <table id="abTable" border="1"></table>
+    </section>
+
+    <script>
+        fetch("/data_out/results.json")
+            .then(response => response.json())
+            .then(data => {
+                const summary = data.business_summary.scale;
+
+                document.getElementById("summaryCards").innerHTML = `
+                    <p><strong>Total Revenue:</strong> $${summary.total_revenue.toLocaleString()}</p>
+                    <p><strong>Total Quantity:</strong> ${summary.total_quantity}</p>
+                    <p><strong>Transactions:</strong> ${summary.number_of_transactions.toLocaleString()}</p>
+                    <p><strong>Avg Booking Value:</strong> $${summary.average_booking_value.toLocaleString()}</p>
+                    <p><strong>Avg Unit Price:</strong> $${summary.average_unit_price.toLocaleString()}</p>
+                    <p><strong>Number of Categories:</strong> ${summary.number_of_categories}</p>
+                `;
+
+                const trendData = data.business_summary.volume_price_structure;
+                const months = trendData.map(row => row.month);
+                const revenues = trendData.map(row => row.total_revenue);
+
+                new Chart(document.getElementById("revenueChart"), {
+                    type: "line",
+                    data: {
+                        labels: months,
+                        datasets: [{
+                            label: "Monthly Revenue",
+                            data: revenues
+                        }]
+                    }
+                });
+
+                const optData = data.optimization_results;
+                const categories = optData.map(row => row.category);
+                const baselineRevenue = optData.map(row => row.baseline_revenue);
+                const optimalRevenue = optData.map(row => row.optimal_revenue);
+
+                new Chart(document.getElementById("optimizationChart"), {
+                    type: "bar",
+                    data: {
+                        labels: categories,
+                        datasets: [
+                            {
+                                label: "Baseline Revenue",
+                                data: baselineRevenue
+                            },
+                            {
+                                label: "Optimal Revenue",
+                                data: optimalRevenue
+                            }
+                        ]
+                    }
+                });
+
+                const abData = data.optimization_ab_results;
+
+                let tableHTML = `
+                    <tr>
+                        <th>Category</th>
+                        <th>Baseline Revenue</th>
+                        <th>Treatment Revenue</th>
+                        <th>Uplift %</th>
+                        <th>p-value</th>
+                        <th>Decision</th>
+                    </tr>
+                `;
+
+                abData.forEach(row => {
+                    tableHTML += `
+                        <tr>
+                            <td>${row.category}</td>
+                            <td>$${row.baseline_revenue.toLocaleString()}</td>
+                            <td>$${row.treatment_revenue.toLocaleString()}</td>
+                            <td>${row.uplift_pct}%</td>
+                            <td>${row.p_value}</td>
+                            <td>${row.decision}</td>
+                        </tr>
+                    `;
+                });
+
+                document.getElementById("abTable").innerHTML = tableHTML;
+            })
+            .catch(error => {
+                console.error("Error loading JSON:", error);
+            });
+    </script>
+</body>
+</html>

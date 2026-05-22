@@ -1,0 +1,23 @@
+[
+    {
+        "category": "BMX",
+        "baseline_revenue": 227090.2,
+        "optimal_price": 4036.16,
+        "optimal_revenue": 236301.14,
+        "uplift_pct": 4.06
+    },
+    {
+        "category": "Folding Bike",
+        "baseline_revenue": 240584.31,
+        "optimal_price": 4118.31,
+        "optimal_revenue": 274842.1,
+        "uplift_pct": 14.24
+    },
+    {
+        "category": "Mountain Bike",
+        "baseline_revenue": 55470.12,
+        "optimal_price": 1129.37,
+        "optimal_revenue": 55020.53,
+        "uplift_pct": -0.81
+    }
+]

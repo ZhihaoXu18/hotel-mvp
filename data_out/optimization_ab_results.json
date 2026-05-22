@@ -1,0 +1,29 @@
+[
+    {
+        "category": "BMX",
+        "baseline_revenue": 226149.47,
+        "optimal_price": 4036.16,
+        "treatment_revenue": 235695.33,
+        "uplift_pct": 4.22,
+        "p_value": 0.0,
+        "decision": "Deploy new pricing"
+    },
+    {
+        "category": "Folding Bike",
+        "baseline_revenue": 241224.7,
+        "optimal_price": 4118.31,
+        "treatment_revenue": 275233.53,
+        "uplift_pct": 14.1,
+        "p_value": 0.0,
+        "decision": "Deploy new pricing"
+    },
+    {
+        "category": "Mountain Bike",
+        "baseline_revenue": 54630.99,
+        "optimal_price": 1129.37,
+        "treatment_revenue": 55413.81,
+        "uplift_pct": 1.43,
+        "p_value": 0.55,
+        "decision": "Inconclusive - need more data"
+    }
+]

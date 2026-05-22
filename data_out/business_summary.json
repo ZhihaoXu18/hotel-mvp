@@ -1,0 +1,154 @@
+{
+    "scale": {
+        "total_revenue": 164497573.57,
+        "total_quantity": "63391",
+        "number_of_transactions": 21145,
+        "average_booking_value": 7779.5,
+        "average_unit_price": 2597.72,
+        "number_of_categories": 7
+    },
+    "revenue_quality": {
+        "mean_revenue": 7779.5,
+        "median_revenue": 6206.31,
+        "mean_unit_price": 2597.72,
+        "median_unit_price": 2586.61,
+        "revenue_cv": 0.7544,
+        "unit_price_cv": 0.5335
+    },
+    "volume_price_structure": [
+        {
+            "month": "2023-01",
+            "total_revenue": 14052961.49,
+            "total_quantity": 5336,
+            "avg_unit_price": 2633.6135,
+            "revenue_mom_growth": NaN,
+            "quantity_mom_growth": NaN,
+            "unit_price_mom_growth": NaN
+        },
+        {
+            "month": "2023-02",
+            "total_revenue": 12556570.51,
+            "total_quantity": 4803,
+            "avg_unit_price": 2614.3182,
+            "revenue_mom_growth": -0.1065,
+            "quantity_mom_growth": -0.0999,
+            "unit_price_mom_growth": -0.0073
+        },
+        {
+            "month": "2023-03",
+            "total_revenue": 13684628.45,
+            "total_quantity": 5343,
+            "avg_unit_price": 2561.2256,
+            "revenue_mom_growth": 0.0898,
+            "quantity_mom_growth": 0.1124,
+            "unit_price_mom_growth": -0.0203
+        },
+        {
+            "month": "2023-04",
+            "total_revenue": 13126992.07,
+            "total_quantity": 5117,
+            "avg_unit_price": 2565.3688,
+            "revenue_mom_growth": -0.0407,
+            "quantity_mom_growth": -0.0423,
+            "unit_price_mom_growth": 0.0016
+        },
+        {
+            "month": "2023-05",
+            "total_revenue": 14251098.24,
+            "total_quantity": 5406,
+            "avg_unit_price": 2636.1632,
+            "revenue_mom_growth": 0.0856,
+            "quantity_mom_growth": 0.0565,
+            "unit_price_mom_growth": 0.0276
+        },
+        {
+            "month": "2023-06",
+            "total_revenue": 13804335.12,
+            "total_quantity": 5382,
+            "avg_unit_price": 2564.908,
+            "revenue_mom_growth": -0.0313,
+            "quantity_mom_growth": -0.0044,
+            "unit_price_mom_growth": -0.027
+        },
+        {
+            "month": "2023-07",
+            "total_revenue": 14203105.29,
+            "total_quantity": 5457,
+            "avg_unit_price": 2602.7314,
+            "revenue_mom_growth": 0.0289,
+            "quantity_mom_growth": 0.0139,
+            "unit_price_mom_growth": 0.0147
+        },
+        {
+            "month": "2023-08",
+            "total_revenue": 14315232.82,
+            "total_quantity": 5466,
+            "avg_unit_price": 2618.9595,
+            "revenue_mom_growth": 0.0079,
+            "quantity_mom_growth": 0.0016,
+            "unit_price_mom_growth": 0.0062
+        },
+        {
+            "month": "2023-09",
+            "total_revenue": 13958532.23,
+            "total_quantity": 5304,
+            "avg_unit_price": 2631.6991,
+            "revenue_mom_growth": -0.0249,
+            "quantity_mom_growth": -0.0296,
+            "unit_price_mom_growth": 0.0049
+        },
+        {
+            "month": "2023-10",
+            "total_revenue": 13015407.23,
+            "total_quantity": 5119,
+            "avg_unit_price": 2542.5683,
+            "revenue_mom_growth": -0.0676,
+            "quantity_mom_growth": -0.0349,
+            "unit_price_mom_growth": -0.0339
+        },
+        {
+            "month": "2023-11",
+            "total_revenue": 13670752.88,
+            "total_quantity": 5210,
+            "avg_unit_price": 2623.9449,
+            "revenue_mom_growth": 0.0504,
+            "quantity_mom_growth": 0.0178,
+            "unit_price_mom_growth": 0.032
+        },
+        {
+            "month": "2023-12",
+            "total_revenue": 13857957.24,
+            "total_quantity": 5448,
+            "avg_unit_price": 2543.6779,
+            "revenue_mom_growth": 0.0137,
+            "quantity_mom_growth": 0.0457,
+            "unit_price_mom_growth": -0.0306
+        }
+    ],
+    "momentum_and_seasonality": {
+        "strongest_month_by_revenue": "2023-08",
+        "weakest_month_by_revenue": "2023-02",
+        "highest_volume_month": "2023-08",
+        "highest_price_month": "2023-05"
+    },
+    "price_tier_comparison": {
+        "low_price_transactions": {
+            "avg_unit_price": 679.46,
+            "avg_quantity": 3.0,
+            "avg_revenue": 2038.17,
+            "count": 4229
+        },
+        "high_price_transactions": {
+            "avg_unit_price": 4522.17,
+            "avg_quantity": 2.98,
+            "avg_revenue": 13466.83,
+            "count": 4229
+        }
+    },
+    "category_dependence": {
+        "top_3_categories_revenue_share": 0.4354,
+        "top_category_by_revenue": "Hybrid Bike",
+        "top_category_revenue_share": 0.1457,
+        "top_category_quantity_share": 0.1461
+    }
+}
